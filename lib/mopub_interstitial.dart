@@ -58,7 +58,7 @@ class MoPubInterstitialAd {
     }
   }
 
-  Future<void> show(this.listener) async {
+  Future<void> show(listener) async {
     await _channel.invokeMethod(SHOW_INTERSTITIAL_METHOD, <String, dynamic>{
       'adUnitId': adUnitId,
     });
